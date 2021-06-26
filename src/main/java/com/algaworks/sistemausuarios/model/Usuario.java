@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Collection;
 
 @Entity
-public class Usuario {
+public class Usuario { //reduzir consulta
 
     @Id
     private Integer id;

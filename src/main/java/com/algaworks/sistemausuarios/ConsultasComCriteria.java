@@ -42,7 +42,7 @@ public class ConsultasComCriteria {
 
         TypedQuery<Usuario> typedQuery = entityManager.createQuery(criteriaQuery)
                 .setMaxResults(2)
-                .setFirstResult(4); // PRIMEIRO = (PAGINA - 1) * QTDE_PAG
+                .setFirstResult(4); // PRIMEIRO = (PAGINA - 1) * QTDE_REG_PAG
         List<Usuario> lista = typedQuery.getResultList();
         lista.forEach(u -> System.out.println(u.getId() + ", " + u.getNome()));
 
@@ -167,7 +167,7 @@ public class ConsultasComCriteria {
 //        CriteriaQuery<Dominio> criteriaQuery = criteriaBuilder.createQuery(Dominio.class);
 //        Root<Usuario> root = criteriaQuery.from(Usuario.class);
 //
-//        criteriaQuery.select(root.get("dominio"));
+//        criteriaQuery.select(root.get("dominio")); //uma propriedade, que ao mesmo tempo é uma entidade.
 //
 //        TypedQuery<Dominio> typedQuery = entityManager.createQuery(criteriaQuery);
 //        List<Dominio> lista = typedQuery.getResultList();

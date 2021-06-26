@@ -1,6 +1,6 @@
 package com.algaworks.sistemausuarios.dto;
 
-public class UsuarioDTO {
+public class UsuarioDTO { //usuario resumido
 
     private Integer id;
 
